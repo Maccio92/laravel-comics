@@ -23,10 +23,11 @@ html {
 .container {
   width: 70%;
   margin: 0 auto;
-  padding-top: 1em;
+  padding: 1em 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 .container .item {
   display: flex;
@@ -66,6 +67,30 @@ html {
   left: 200px;
 }
 
+.second-container {
+  width: 100%;
+  height: 150px;
+  background-color: #0282f9;
+  display: flex;
+  align-items: center;
+}
+.second-container .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 0 0.5em;
+  z-index: 2;
+}
+.second-container .product .img {
+  width: 20%;
+}
+.second-container .product .caption {
+  font-size: 0.6em;
+  color: white;
+  padding-left: 0.5em;
+}
+
 .header-container {
   width: 70%;
   height: 50px;
@@ -92,4 +117,81 @@ html {
 .nav li a {
   color: black;
   text-decoration: none;
+}
+
+.upper-footer {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../../../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.upper-footer .thumb-bg {
+  width: 400px;
+  position: absolute;
+  top: -50px;
+  right: 150px;
+  z-index: 0;
+}
+
+.lower-footer {
+  width: 100%;
+  height: 100px;
+  background-color: #303030;
+  position: relative;
+  z-index: 1;
+}
+.lower-footer .container-low {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower-footer .container-low .left-col button {
+  border: solid 2px #0282f9;
+  padding: 10px;
+  background-color: #303030;
+  color: white;
+}
+.lower-footer .container-low .right-col {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+.lower-footer .container-low img {
+  height: 20%;
+}
+
+.container-footer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1em 0;
+  display: flex;
+  justify-content: start;
+}
+.container-footer .col {
+  width: 15%;
+}
+.container-footer .col ul {
+  list-style: none;
+}
+.container-footer .col ul li {
+  color: grey;
+  font-size: 0.6em;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+h2 {
+  color: #0282f9;
+  font-size: 1em;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
 }
