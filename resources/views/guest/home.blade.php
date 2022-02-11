@@ -8,17 +8,22 @@
 <div>
     <div class="bg">
         <div class="jumbotron">
-            <button class="">CURRENT SERIES</button>
+            <button class="current">CURRENT SERIES</button>
         </div>
-        <div class="thumb-container">
+        <div class="container">
             @foreach ($comics as $comic)
-                <div class="thumb">
+                <div class="item">
+                    <div class="thumb">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                    
+                    
+                    </div>
                     <h2>{{$comic['title']}}</h2>
                 </div>
                 
                 @endforeach
-                <button class="">LOAD MORE</button>
+            
+                <button class="load">LOAD MORE</button>
         </div>
     </div>  
 </div>

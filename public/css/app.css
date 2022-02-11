@@ -15,22 +15,55 @@ html {
 .jumbotron {
   width: 100%;
   background-image: url("../../img/jumbotron.jpg");
-  height: 500px;
+  background-size: cover;
+  height: 350px;
+  position: relative;
 }
 
-.thumb-container {
+.container {
   width: 70%;
   margin: 0 auto;
+  padding-top: 1em;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.container .item {
+  display: flex;
+  flex-basis: 16.6666666667%;
+  flex-direction: column;
+  padding: 1em;
+  height: 250px;
+}
+.container .item .thumb {
+  height: 180px;
+  overflow: hidden;
+}
+.container .item .thumb img {
+  height: 250px;
+}
+.container .item h2 {
+  color: white;
+  font-size: 0.8em;
+  padding-top: 0.8em;
 }
 
-.thumb {
-  flex-basis: 16.6666666667%;
-  padding: 1em;
+.load {
+  background-color: #0282f9;
   color: white;
-  font-size: 0.5em;
+  border: 0;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.current {
+  background-color: #0282f9;
+  color: white;
+  border: 0;
+  padding: 15px;
+  position: absolute;
+  bottom: -20px;
+  left: 200px;
 }
 
 .header-container {
