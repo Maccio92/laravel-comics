@@ -6,7 +6,7 @@
 
 @section ('content')
 <div>
-    <div class="">
+    <div class="bg">
         <div class="jumbotron">
             <button class="">CURRENT SERIES</button>
         </div>

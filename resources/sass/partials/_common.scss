@@ -6,19 +6,25 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+.bg{
+    background-color: #1c1c1c;
+}
 .jumbotron{
     width: 100%;
     background-image: url('../../img/jumbotron.jpg');
     height: 500px;
 }
 .thumb-container{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .thumb{
     flex-basis: calc(100% / 6);
     padding: 1em;
-    
+    color: white;
+    font-size: 0.5em;
 }
