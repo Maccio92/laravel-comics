@@ -10,12 +10,13 @@
         <div class="jumbotron">
             <button class="">CURRENT SERIES</button>
         </div>
-        <div class="container flex flex-wrap">
+        <div class="thumb-container">
             @foreach ($comics as $comic)
-                <div class="">
+                <div class="thumb">
                     <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                    <h2>{{$comic['title']}}</h2>
                 </div>
-                <h2>{{$comic['title']}}</h2>
+                
                 @endforeach
                 <button class="">LOAD MORE</button>
         </div>
