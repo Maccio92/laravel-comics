@@ -17,3 +17,20 @@ Route::get('/', function () {
     $data = ['comics' => config('comics'), 'nomePagina' => 'HomePage'];
     return view('guest.home', $data);
 });
+
+
+Route::get('comics/{id}', function ($id) {
+    $collection = collect(config('comics'));
+    $comic = $collection->where('id', $id);
+    if ($comic->count() === 0) {
+        abort(404);
+    }
+    $singleComic = '';
+    foreach ($comic as $value) {
+        $singleComic = $value;
+    }
+    return view('guest.comic', [
+        'comic' => $singleComic,
+        'nomePagina' => $singleComic['title']
+    ]);
+})->name('comic');

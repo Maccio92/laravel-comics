@@ -11,17 +11,16 @@
             <button class="current">CURRENT SERIES</button>
         </div>
         <div class="container">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $item)
                 <div class="item">
-                    <div class="thumb">
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-                    
-                    
-                    </div>
-                    <h2>{{$comic['title']}}</h2>
+                    <a href="{{ route('comic', $item['id']) }}">
+                        <div class="thumb">
+                            <img src="{{ $item['thumb'] }}" alt="{{$item['title']}}">
+                        </div>
+                        <h2>{{$item['title']}}</h2>
+                    </a>
                 </div>
-                
-                @endforeach
+            @endforeach
             
                 <button class="load">LOAD MORE</button>
         </div>
