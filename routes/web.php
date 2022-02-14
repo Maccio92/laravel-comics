@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = ['comics' => config('comics'), 'nomePagina' => 'HomePage'];
+    $data = ['comics' => collect(config('comics')), 'nomePagina' => 'HomePage'];
+    dd($data);
     return view('guest.home', $data);
 });
 
 
-Route::get('comics/{id}', function ($id) {
+Route::get('comic/{id}', function ($id) {
     $collection = collect(config('comics'));
     $comic = $collection->where('id', $id);
     if ($comic->count() === 0) {
@@ -29,6 +30,7 @@ Route::get('comics/{id}', function ($id) {
     foreach ($comic as $value) {
         $singleComic = $value;
     }
+
     return view('guest.comic', [
         'comic' => $singleComic,
         'nomePagina' => $singleComic['title']
