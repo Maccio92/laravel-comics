@@ -1,0 +1,107 @@
+.blue-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #0282f9;
+  margin-bottom: 3em;
+}
+
+.current-thumb {
+  border: 0;
+  padding: 15px;
+  position: absolute;
+  bottom: -40px;
+  left: 200px;
+}
+
+.comic-title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #242424;
+}
+
+.text-thumb-1 {
+  background-color: #4aa8ff;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-transform: uppercase;
+}
+
+.text-thumb-2 {
+  background-color: #4aa8ff;
+  color: white;
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  width: 87%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-main {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left {
+  width: 60%;
+}
+
+.container-right {
+  width: 30%;
+}
+
+.green-container {
+  display: flex;
+  font-size: 0.8em;
+  padding: 20px 0;
+}
+.green-container .price {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #37bb37;
+  padding: 15px;
+}
+.green-container .price .text-price {
+  color: white;
+}
+.green-container button {
+  width: 30%;
+  background-color: #37bb37;
+  color: white;
+  font-weight: 700;
+  border: 0;
+  border-left: solid 1px black;
+}
+.green-container button .fa-sort-down {
+  vertical-align: text-top;
+  font-size: 0.8em;
+}
+
+.talent, .specs {
+  width: 50%;
+}
+.talent h3, .specs h3 {
+  color: black;
+}
+.talent .caption, .specs .caption {
+  width: 90%;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: solid 0.5px silver;
+}
+.talent .caption .left-title, .specs .caption .left-title {
+  width: 70%;
+}
+.talent .caption .right-descr, .specs .caption .right-descr {
+  padding: 0 80px;
+}
+.talent .caption a, .specs .caption a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4aa8ff;
+}
